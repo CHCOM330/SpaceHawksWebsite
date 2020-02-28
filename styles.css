@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,900&display=swap&subset=latin-ext');
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -14,5 +14,13 @@ html {
 }
 
 header {
-  display: flex;
+
+}
+
+header img {
+
+}
+
+header h1 {
+
 }
