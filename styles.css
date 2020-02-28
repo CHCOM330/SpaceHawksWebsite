@@ -8,6 +8,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 html {
+  box-sizing: border-box;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-size: 20px; /* f = 20 */
   line-height: 1.5em; /* l = 30 */
@@ -19,14 +20,20 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   background-image: url("./images/team.png");
   font-size: 50px;
   color: #ffffff;
+  padding: 0 50px;
 }
 
 header h1 {
   line-height: 3rem;
+}
+
+header p {
+  line-height: 3rem;
+  font-size: 20px;
 }
