@@ -15,36 +15,42 @@ html {
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  border-bottom: 3px solid white;
-  padding: 0 50px;
+  display: none;
 }
 
-nav img {
-  display: block;
-  height: 8vh;
-  margin-right: 5%;
-}
+@media screen and (min-width: 400px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 3px solid white;
+    padding: 0 50px;
+  }
 
-nav button {
-  background: none;
-  color: white;
-  border: 1px solid white;
-  width: 100%;
-  height: 7vh;
-  margin: 0 2%;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: bold;
-}
+  nav img {
+    display: block;
+    height: 8vh;
+    margin-right: 5%;
+  }
 
-nav button:hover {
-  background: white;
-  color: black;
-  cursor: pointer;
+  nav button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    height: 7vh;
+    margin: 0 2%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  nav button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -52,8 +58,6 @@ nav button:hover {
     margin: 0 5%;
   }
 }
-
-
 
 header {
   display: grid;
