@@ -138,5 +138,5 @@ section .image-gallery figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: max-content;
+  /* width: max-content; */
 }
