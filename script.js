@@ -51,6 +51,6 @@ window.onload = async () => {
   }
 }
 
-function linkSponsor(link) {
+function href(link) {
   window.location.href = link;
 }
