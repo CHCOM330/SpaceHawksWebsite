@@ -1,4 +1,13 @@
 window.onload = async () => {
+  // First add hooks for buttons
+  let buttons = ["team", "mission", "sponsors"];
+
+  for (let b of buttons) {
+    document.getElementById(`${b}Button`).onclick = () => {
+      window.location.href = `#${b}`;
+    }
+  }
+  // Then try to load images for gallery
   let member_list;
   try {
     // Try to fetch member list
@@ -40,4 +49,8 @@ window.onload = async () => {
       continue;
     }
   }
+}
+
+function linkSponsor(link) {
+  window.location.href = link;
 }

@@ -12,28 +12,57 @@
   <header>
     <nav>
       <img src="./images/logo.png"/>
-      <button>About</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
+      <button id="teamButton">Team</button>
+      <button id="missionButton">Mission</button>
+      <button id="sponsorsButton">Sponsors</button>
     </nav>
     <h1>Scarlet Spacehawks</h1>
     <p>Home of Illinois Institute of Technology's Spacehawks</p>
   </header>
 
-  <section class="card alt" id="about-us">
+  <section class="card alt" id="team">
     <h2>Meet our team</h2>
     <img src="./images/logo-name.png"/>
     <p id="error_fetch"></p>
-    <!-- Please forgive the div -->
+    <!--
+    Please forgive the div; Note that this is empty because the images are
+    fetched via javascript -->
     <div class="image-gallery">
-      <!-- TODO: Add max number of images shown (and show more button) -->
+      <!-- TODO: Add max number of images shown (+ show more button) -->
     </div>
   </section>
 
-  <section class="card" id="the-competition">
+  <section class="card" id="mission">
     <h2>What do we do?</h2>
     <img src="./images/rmc.png"/>
-    <p>We compete in NASA's annual Robot Mining Competition that is held at the Kennedy Space Center. The competition consists of creating an autonomous robot that can navigate the arena, dig for minerals beneath the surface, and return the materials to a collection bin.</p>
+    <p>We compete in NASA's annual Robot Mining Competition that is held at the Kennedy Space Center. The competition consists of engineering an autonomous robot that can navigate the arena, dig for minerals beneath the surface, and return the materials to a collection bin.</p>
+    <p>The competition aims to simulate the surface of the Moon in preperation for NASA's Artemis program, which aims to land astronauts on the Lunar surface by 2024.</p>
+  </section>
+
+  <section class="card alt" id="sponsors">
+    <h2>Our Partners</h2>
+    <div class="image-gallery sponsor-gallery">
+      <figure onclick="linkSponsor('https://www.4pcb.com/')">
+        <img src="./images/sponsors/advanced_circuits.png"/>
+        <figcaption>Advanced Circuits</figcaption>
+      </figure>
+
+      <figure onclick="linkSponsor('https://www.altium.com/')">
+        <img src="./images/sponsors/altium.png"/>
+        <figcaption>Altium</figcaption>
+      </figure>
+
+      <figure onclick="linkSponsor('https://www.solidworks.com/')">
+        <img src="./images/sponsors/solidworks.png"/>
+        <figcaption>Solidworks</figcaption>
+      </figure>
+
+      <figure onclick="linkSponsor('https://www.sparkfun.com/')">
+        <img src="./images/sponsors/sparkfun.png"/>
+        <figcaption>Sparkfun</figcaption>
+      </figure>
+
+    </div>
   </section>
 </body>
 </html>

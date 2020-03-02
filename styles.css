@@ -12,6 +12,7 @@ html {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-size: 20px; /* f = 20 */
   line-height: 1.5em; /* l = 30 */
+  scroll-behavior: smooth;
 }
 
 header {
@@ -107,7 +108,11 @@ nav {
   width: 70vw;
 }
 
-@media screen and (min-width: 500px) {
+.card p {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 700px) {
   .card img {
     width: 40vw;
     float: left;
@@ -137,6 +142,15 @@ section .image-gallery {
 section .image-gallery figure {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
+  text-align: center;
   /* width: max-content; */
+}
+
+.sponsor-gallery figure {
+  cursor: pointer;
+}
+
+.sponsor-gallery img {
+  border-radius: 100%;
 }
