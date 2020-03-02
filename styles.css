@@ -129,6 +129,8 @@ nav {
 
 section .image-gallery {
   display: grid;
+  justify-content: center;
+  margin-top: 40px;
   grid-gap: 50px;
   grid-auto-flow: row;
   grid-template-columns: repeat(auto-fit, 100px);
