@@ -48,7 +48,7 @@ nav ul {
     align-items: center;
     height: 10vh;
     width: 100%;
-    top: 0;
+    bottom: 0;
     position: fixed;
     border-bottom: 3px solid white;
     padding: 0 25px;
