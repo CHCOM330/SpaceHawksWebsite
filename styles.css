@@ -18,7 +18,7 @@ html {
 header {
   display: grid;
   text-align: center;
-  height: 75vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   background-image: url("./images/team.png");
