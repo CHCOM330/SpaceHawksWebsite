@@ -40,9 +40,9 @@ nav ul {
   display: none;
 }
 
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 400px) {
   nav ul {
-    background: black;
+    background: none;
     display: flex;
     align-items: center;
     height: 10vh;
@@ -51,23 +51,23 @@ nav ul {
     position: fixed;
     border-bottom: 3px solid white;
     padding: 0 25px;
+    transition: 50ms ease;
   }
 
+
   nav ul li {
-    background: none;
+    display: none;
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.05);
-    background: rgba(255, 255, 255, 0.05);
     height: max-content;
-    width: 14vh;
+    width: 80px;
     border-radius: 10px;
     font-weight: bold;
     margin: 0 10px;
   }
 
-  nav ul li p {
+  nav ul li a {
     padding: 15px 0;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   nav ul li:hover {
@@ -79,6 +79,14 @@ nav ul {
   nav ul img {
     display: block;
     height: 8vh;
+  }
+
+  nav:hover ul {
+    background: black;
+  }
+
+  nav:hover ul li {
+    display: block;
   }
 }
 
