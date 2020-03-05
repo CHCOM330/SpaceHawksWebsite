@@ -28,7 +28,6 @@ header {
 
 header h1 {
   line-height: 3rem;
-  padding: 0 50px;
 }
 
 header .header-p {
@@ -41,7 +40,7 @@ nav ul {
   display: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 530px) {
   nav ul {
     background: black;
     display: flex;
