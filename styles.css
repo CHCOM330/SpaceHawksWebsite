@@ -112,7 +112,7 @@ nav ul {
   color: black;
   padding: 40px 5%;
   border-bottom: 2px solid black;
-  min-height: 500px;
+  min-height: 100vh;
 }
 
 .alt {
