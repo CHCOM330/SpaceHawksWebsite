@@ -50,7 +50,3 @@ window.onload = async () => {
     }
   }
 }
-
-function href(link) {
-  window.location.href = link;
-}
