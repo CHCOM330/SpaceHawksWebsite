@@ -36,23 +36,27 @@ header .header-p {
   padding: 0 50px;
 }
 
-nav ul {
+nav {
   display: none;
 }
 
 @media screen and (min-width: 350px) {
-  nav ul {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 0 10px 10px 0;
-    display: flex;
-    align-items: center;
+  nav {
+    display: block;
+    position: fixed;
+    border-bottom: 3px solid white;
     height: 10vh;
     width: 9vh;
     bottom: 0;
-    position: fixed;
-    border-bottom: 3px solid white;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 10px 10px 0;
     transition: 50ms ease;
     transition: width 500ms ease;
+  }
+  nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   nav ul img {
@@ -81,12 +85,8 @@ nav ul {
     text-decoration: none;
   }
 
-  nav:hover ul {
+  nav:hover {
     width: 100%;
-  }
-
-  nav:hover ul img {
-    background: none;
   }
 
   nav:hover ul li {
