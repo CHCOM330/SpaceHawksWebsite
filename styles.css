@@ -81,11 +81,6 @@ nav {
     font-size: 15px;
   }
 
-  nav ul li a:link, nav ul li a:visited {
-    color: unset;
-    text-decoration: none;
-  }
-
   nav:hover {
     width: 100%;
   }
@@ -177,7 +172,6 @@ section .image-gallery figure {
   flex-direction: column;
   justify-content: baseline;
   text-align: center;
-  /* width: max-content; */
 }
 
 .sponsor-gallery figure {
@@ -186,4 +180,9 @@ section .image-gallery figure {
 
 .sponsor-gallery img {
   border-radius: 100%;
+}
+
+a:link, a:visited {
+  color: unset;
+  text-decoration: none;
 }
