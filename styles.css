@@ -40,21 +40,26 @@ nav ul {
   display: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 350px) {
   nav ul {
-    background: none;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 10px 10px 0;
     display: flex;
     align-items: center;
     height: 10vh;
-    width: 8vh;
+    width: 9vh;
     bottom: 0;
     position: fixed;
     border-bottom: 3px solid white;
-    padding: 0 25px;
     transition: 50ms ease;
     transition: width 500ms ease;
   }
 
+  nav ul img {
+    display: block;
+    height: 8vh;
+    margin-right: 10px;
+  }
 
   nav ul li {
     display: none;
@@ -63,7 +68,7 @@ nav ul {
     width: 80px;
     border-radius: 10px;
     font-weight: bold;
-    margin: 0 10px;
+    padding: 10px 15px;
   }
 
   nav ul li a {
@@ -73,7 +78,19 @@ nav ul {
 
   nav ul li a:link, nav ul li a:visited {
     color: unset;
-    text-decoration: none; 
+    text-decoration: none;
+  }
+
+  nav:hover ul {
+    width: 100%;
+  }
+
+  nav:hover ul img {
+    background: none;
+  }
+
+  nav:hover ul li {
+    display: block;
   }
 
   nav ul li:hover {
@@ -82,20 +99,6 @@ nav ul {
     cursor: pointer;
   }
 
-  nav ul img {
-    display: block;
-    height: 8vh;
-  }
-
-  nav:hover ul {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 0 10px 10px 0;
-    width: 500px;
-  }
-
-  nav:hover ul li {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 500px) {
