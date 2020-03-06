@@ -24,6 +24,7 @@ header {
   background-image: url("./images/team.png");
   font-size: 50px;
   color: #ffffff;
+  padding-top: 10vh;
 }
 
 header h1 {
@@ -137,11 +138,17 @@ nav {
 }
 
 @media screen and (min-width: 700px) {
+  .card {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   .card img {
     width: 40vw;
     float: left;
     shape-outside: circle(50%);
   }
+
+
 }
 
 @media screen and (min-width: 1000px) {
