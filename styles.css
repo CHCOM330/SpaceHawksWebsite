@@ -140,13 +140,17 @@ nav {
     display: none;
     font-weight: bold;
     height: max-content;
-    padding: 10px 15px;
+    height: 100%;
+    padding: 0 15px;
     width: 80px;
   }
 
   nav ul li a {
+    height: 100%;
     font-size: 15px;
     padding: 15px 0;
+    display: flex;
+    justify-content: center;
   }
 
   nav:hover {
