@@ -35,10 +35,11 @@ header {
 header .header-p {
   font-size: 20px;
   line-height: 3rem;
-  padding: 0 50px;
+  padding: 0;
 }
 
 header h1 {
+  font-size: 20px;
   line-height: 3rem;
 }
 
