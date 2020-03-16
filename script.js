@@ -1,23 +1,13 @@
 window.onload = async () => {
-  // First add hooks for buttons
-  let buttons = ["team", "mission", "sponsors"];
-
-  for (let b of buttons) {
-    document.getElementById(`${b}Button`).onclick = () => {
-      window.location.href = `#${b}`;
-    }
-  }
-  // Then try to load images for gallery
   let member_list;
   try {
     // Try to fetch member list
     let r = await fetch("./images/team/team_list.txt");
     if (r.status !== 200) throw new Error("File not found");
-    member_list = (await r.text()).split("\n").filter(e => e !== "");
+    member_list = (await r.text()).split("\n").filter(m => m !== "");
 
   } catch (e) {
     // If it fails, outputs something in its place
-    console.log("ouch");
     let elem = document.getElementById("error_fetch");
     elem.innerText = "Unable to fetch member list";
     return;
