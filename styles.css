@@ -129,13 +129,7 @@ nav {
     height: 100%;
   }
 
-  nav ul img {
-    display: block;
-    height: 8vh;
-    margin-right: 10px;
-  }
-
-  nav ul li {
+  nav ul li a {
     color: white;
     border-radius: 10px;
     display: none;
@@ -152,11 +146,17 @@ nav {
     padding: 15px 0;
   }
 
+  nav ul img {
+    display: block;
+    height: 8vh;
+    margin-right: 10px;
+  }
+
   nav:hover {
     width: 100%;
   }
 
-  nav:hover ul li {
+  nav:hover ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,7 @@ nav {
     /* display: none; */
   }
 
-  nav ul li:hover {
+  nav ul li a:hover {
     background: white;
     color: black;
     cursor: pointer;
