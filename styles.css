@@ -48,12 +48,7 @@ nav {
   display: none;
 }
 
-.card {
-  background: black;
-  color: #D9D9D9;
-  min-height: 100vh;
-  padding: 40px 5%;
-}
+/* Banner stuff */
 
 .banner {
   height: 50vh;
@@ -69,6 +64,10 @@ nav {
 
 .banner h2 {
   color: white;
+
+  background: #090909;
+  padding: 30px;
+
   font-size: 40px;
   letter-spacing: 10px;
   line-height: 40px;
@@ -84,7 +83,16 @@ nav {
   background-image: url("./images/robot.jpg");
 }
 
-.card h2 {
+/* Card stuff */
+
+.card {
+  background: black;
+  color: #D9D9D9;
+  min-height: 60vh;
+  padding: 40px 5%;
+}
+
+.card h3 {
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 40px;
@@ -102,9 +110,12 @@ nav {
 }
 
 .alt {
-  background: linear-gradient(red, #440000);
+  background: red;
+  background: linear-gradient(red, #FF5555);
   color: white;
 }
+
+/* Gallery stuff */
 
 .image-gallery {
   display: grid;
@@ -136,18 +147,18 @@ nav {
   border-radius: 100%;
 }
 
+/* Media queries */
+
 @media screen and (min-width: 250px) {
   nav {
-    background: rgba(0, 0, 0, 0.7);
+    background: #090909;
     border-bottom: 3px solid white;
     border-radius: 0 10px 10px 0;
     display: block;
 
-    position: fixed;
-    top: 0;
 
     height: 10vh;
-    width: 9vh;
+    width: 100%;
 
     transition: 50ms ease;
     transition: width 500ms ease;
@@ -161,7 +172,6 @@ nav {
   nav ul li a {
     color: white;
     border-radius: 10px;
-    display: none;
     font-weight: bold;
     height: max-content;
     height: 100%;
@@ -171,6 +181,9 @@ nav {
   }
 
   nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     padding: 15px 0;
   }
@@ -179,20 +192,6 @@ nav {
     display: block;
     height: 8vh;
     margin-right: 10px;
-  }
-
-  nav:hover {
-    width: 100%;
-  }
-
-  nav:hover ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  nav:hover ul img {
-    /* display: none; */
   }
 
   nav ul li a:hover {
