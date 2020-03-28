@@ -21,9 +21,7 @@ a:link, a:visited {
 }
 
 header {
-  background-image: url("./images/team.png");
-  background-position: center;
-  background-size: cover;
+  background: #090909;
   color: #ffffff;
   display: grid;
   font-size: 50px;
@@ -48,11 +46,22 @@ nav {
 }
 
 .card {
-  background: #D9D9D9;
-  border-bottom: 2px solid black;
-  color: black;
+  background: black;
+  color: #D9D9D9;
   min-height: 100vh;
   padding: 40px 5%;
+}
+
+#team {
+  background-image: url("./images/team.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#mission {
+  background-image: url("./images/robot.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .card h2 {
@@ -73,7 +82,7 @@ nav {
 }
 
 .alt {
-  background: #C70718;
+  background: linear-gradient(red, #440000);
   color: white;
 }
 
@@ -115,7 +124,7 @@ nav {
     display: block;
 
     position: fixed;
-    bottom: 0;
+    top: 0;
 
     height: 10vh;
     width: 9vh;
