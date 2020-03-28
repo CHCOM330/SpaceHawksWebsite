@@ -25,6 +25,7 @@ header {
   color: #ffffff;
   display: grid;
   font-size: 50px;
+  font-weight: 900;
   height: 60vh;
   padding-top: 10vh;
   text-align: center;
@@ -32,12 +33,13 @@ header {
 
 header .header-p {
   font-size: 20px;
+  font-weight: normal;
   line-height: 3rem;
   padding: 0;
 }
 
 header h1 {
-  font-size: 20px;
+  font-size: 50px;
   line-height: 3rem;
 }
 
@@ -54,16 +56,33 @@ nav {
   padding: 40px 5%;
 }
 
-#team {
-  background-image: url("./images/team.png");
+.banner {
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-#mission {
+.banner h2 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 10px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#team-banner {
+  background-image: url("./images/team.png");
+}
+
+#mission-banner {
   background-image: url("./images/robot.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card h2 {
