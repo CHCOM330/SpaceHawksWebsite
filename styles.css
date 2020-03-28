@@ -24,7 +24,6 @@ header {
   background: #090909;
   color: #ffffff;
   display: grid;
-  font-size: 50px;
   font-weight: 900;
   height: 60vh;
   padding-top: 10vh;
@@ -39,7 +38,7 @@ header .header-p {
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 20px;
   line-height: 3rem;
 }
 
@@ -200,6 +199,12 @@ nav {
     background: white;
     color: black;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  header h1 {
+    font-size: 50px;
   }
 }
 
