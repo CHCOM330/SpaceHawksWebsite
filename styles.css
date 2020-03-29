@@ -100,7 +100,7 @@ nav {
 .card {
   background: #1A2324;
   color: #BDB3B1;
-  min-height: 40vh;
+  min-height: 70vh;
   padding: 40px 5%;
   overflow: auto; /* Fixes card-logo from floating out of the box */
 }
