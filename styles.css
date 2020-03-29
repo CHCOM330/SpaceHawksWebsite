@@ -20,7 +20,7 @@ body {
 }
 
 a:link, a:visited {
-  color: unset;
+  color: #BDB3B1;
   text-decoration: none;
 }
 
@@ -144,14 +144,18 @@ nav {
   padding: 30px;
 }
 
-.image-gallery figcaption {
-  text-align: center;
-}
-
 .image-gallery img {
   display: block;
   width: 100px;
   margin: 0 auto;
+}
+
+.image-gallery figcaption {
+  text-align: center;
+}
+
+.image-gallery strong {
+  display: block;
 }
 
 .sponsor-gallery figure {
