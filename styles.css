@@ -166,54 +166,6 @@ nav {
 /* Media queries */
 
 @media screen and (min-width: 250px) {
-  nav {
-    display: block;
-    background: #1A2324;
-    color: #BDB3B1;
-
-    height: 10vh;
-    width: 100%;
-
-    transition: 50ms ease;
-    transition: width 500ms ease;
-  }
-  nav ul {
-    align-items: center;
-    display: flex;
-    height: 100%;
-  }
-
-  nav ul li a {
-    color: #BDB3B1;
-    border-radius: 10px;
-    font-weight: bold;
-    height: max-content;
-    height: 100%;
-    padding: 0 15px;
-    width: 80px;
-    transition: color,background 100ms linear;
-  }
-
-  nav ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    padding: 15px 0;
-  }
-
-  nav ul img {
-    display: block;
-    height: 8vh;
-    margin-right: 10px;
-  }
-
-  nav ul li a:hover {
-    background: #BDB3B1;
-    color: #1A2324;
-    cursor: pointer;
-  }
-
   header h1 {
     font-size: 20px;
   }
@@ -224,6 +176,57 @@ nav {
 }
 
 @media screen and (min-width: 350px) {
+  /* Enable flex based nav bar */
+  @supports (display: flex) {
+    nav {
+      display: block;
+      background: #1A2324;
+      color: #BDB3B1;
+
+      height: 10vh;
+      width: 100%;
+
+      transition: 50ms ease;
+      transition: width 500ms ease;
+    }
+    nav ul {
+      align-items: center;
+      display: flex;
+      height: 100%;
+    }
+
+    nav ul li a {
+      color: #BDB3B1;
+      border-radius: 10px;
+      font-weight: bold;
+      height: max-content;
+      height: 100%;
+      padding: 0 15px;
+      width: 80px;
+      transition: color,background 100ms linear;
+    }
+
+    nav ul li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      padding: 15px 0;
+    }
+
+    nav ul img {
+      display: block;
+      height: 8vh;
+      margin-right: 10px;
+    }
+
+    nav ul li a:hover {
+      background: #BDB3B1;
+      color: #1A2324;
+      cursor: pointer;
+    }
+  }
+
   header h1 {
     width: max-content;
   }
