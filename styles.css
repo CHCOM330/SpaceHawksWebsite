@@ -25,33 +25,41 @@ header {
   color: #ffffff;
   display: grid;
   font-weight: 900;
-  height: 60vh;
-  padding-top: 10vh;
+  height: 90vh;
+  /* padding-top: 10vh; */
   text-align: center;
-}
 
-header .header-p {
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 3rem;
-  padding: 0;
+  background-image: url("./images/moon.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
+  color: #BDB3B1;
+  background: #1A2324;
+  padding: 30px;
+  margin: 0 auto;
+  height: min-content;
+  width: min-content;
   font-size: 20px;
   line-height: 3rem;
+  text-transform: uppercase;
+  word-spacing: 20px;
 }
 
 nav {
-  background: #090909;
-  color: #ffffff;
   display: none;
 }
 
 /* Banner stuff */
 
 .banner {
-  height: 50vh;
+  height: 70vh;
 
   display: flex;
   justify-content: center;
@@ -86,10 +94,16 @@ nav {
 /* Card stuff */
 
 .card {
-  background: black;
-  color: #D9D9D9;
-  min-height: 60vh;
+  background: #1A2324;
+  color: #BDB3B1;
+  min-height: 40vh;
   padding: 40px 5%;
+  overflow: auto; /* Fixes card-logo from floating out of the box */
+}
+
+.alt {
+  background: #BDB3B1;
+  color: #1A2324;
 }
 
 .card h3 {
@@ -97,6 +111,7 @@ nav {
   font-weight: bold;
   padding-bottom: 40px;
   text-align: center;
+  hyphens: auto;
 }
 
 .card-logo {
@@ -109,11 +124,6 @@ nav {
   margin-top: 20px;
 }
 
-.alt {
-  background: red;
-  background: linear-gradient(red, #FF5555);
-  color: white;
-}
 
 /* Gallery stuff */
 
@@ -130,6 +140,7 @@ nav {
   display: block;
   margin: 0;
   width: 100px;
+  margin: 0 auto; /* Makes things look nicer on older browsers */
 }
 
 .image-gallery figure {
@@ -151,11 +162,9 @@ nav {
 
 @media screen and (min-width: 250px) {
   nav {
-    background: #090909;
-    border-bottom: 3px solid white;
-    border-radius: 0 10px 10px 0;
     display: block;
-
+    background: #1A2324;
+    color: #BDB3B1;
 
     height: 10vh;
     width: 100%;
@@ -170,7 +179,7 @@ nav {
   }
 
   nav ul li a {
-    color: white;
+    color: #BDB3B1;
     border-radius: 10px;
     font-weight: bold;
     height: max-content;
@@ -195,21 +204,36 @@ nav {
   }
 
   nav ul li a:hover {
-    background: white;
-    color: black;
+    background: #BDB3B1;
+    color: #1A2324;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 275px) {
+  header h1 {
+    font-size: 10px;
+    padding: 20px;
   }
 }
 
 @media screen and (min-width: 350px) {
   header h1 {
-    font-size: 50px;
+    font-size: 20px;
+    width: max-content;
   }
 }
 
-@media screen and (min-width: 500px) {
-  nav button {
-    margin: 0 5%;
+@media screen and (min-width: 450px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  header h1 {
+    font-size: 40px;
   }
 }
 
@@ -225,10 +249,21 @@ nav {
     shape-outside: circle(50%);
     width: 40vw;
   }
+
+  header h1 {
+    font-size: 50px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .card-logo {
     width: 400px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  header h1 {
+    font-size: 80px;
   }
 }
