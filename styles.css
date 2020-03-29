@@ -30,10 +30,9 @@ header {
   display: grid;
   font-weight: 900;
   height: 90vh;
-  /* padding-top: 10vh; */
   text-align: center;
 
-  /* TODO: Use imgage-set */
+  /* TODO: Use image-set */
   background-image: url("./images/moon.png");
   background-position: center;
   background-size: cover;
@@ -50,10 +49,10 @@ header h1 {
   margin: 0 auto;
   height: min-content;
   width: min-content;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 3rem;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 10px;
 }
 
 nav {
@@ -75,16 +74,18 @@ nav {
 }
 
 .banner h2 {
-  color: white;
-
-  background: #090909;
-  padding: 30px;
-
-  font-size: 40px;
+  color: #BDB3B1;
+  background: #1A2324;
+  padding: 10px;
+  font-size: 15px;
   letter-spacing: 10px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.banner h2 strong {
+  display: block;
 }
 
 #team-banner {
@@ -212,25 +213,30 @@ nav {
     color: #1A2324;
     cursor: pointer;
   }
-}
 
-@media screen and (min-width: 275px) {
   header h1 {
-    font-size: 10px;
-    padding: 20px;
+    font-size: 20px;
+  }
+
+  .banner h2 {
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 350px) {
   header h1 {
-    font-size: 20px;
     width: max-content;
+  }
+
+  .banner h2 strong {
+    display: inline;
   }
 }
 
 @media screen and (min-width: 450px) {
   header h1 {
     font-size: 30px;
+    word-spacing: 20px;
   }
 }
 
@@ -238,6 +244,11 @@ nav {
 @media screen and (min-width: 600px) {
   header h1 {
     font-size: 40px;
+  }
+
+  .banner h2 {
+    font-size: 40px;
+    padding: 25px;
   }
 }
 
@@ -264,10 +275,26 @@ nav {
   .card-logo {
     width: 400px;
   }
+
+  .banner h2 {
+    font-size: 50px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
   header h1 {
     font-size: 80px;
   }
+}
+
+/* Fixes scrolling issue on IE 11 - Thanks Stack Overflow https://stackoverflow.com/questions/27966735/why-does-a-fixed-background-image-move-when-scrolling-on-ie */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    html{
+        overflow: hidden;
+        height: 100%;
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
 }
