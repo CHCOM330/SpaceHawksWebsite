@@ -24,6 +24,11 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+
+nav {
+  display: none;
+}
+
 header {
   color: #BDB3B1;
   background: #1A2324;
@@ -31,6 +36,8 @@ header {
   font-weight: 900;
   height: 90vh;
   text-align: center;
+
+  border-bottom: 10px solid #1A2324;
 
   /* TODO: Use image-set */
   background-image: url("./images/moon.png");
@@ -53,10 +60,6 @@ header h1 {
   line-height: 3rem;
   text-transform: uppercase;
   word-spacing: 10px;
-}
-
-nav {
-  display: none;
 }
 
 /* Banner stuff */
@@ -106,6 +109,10 @@ nav {
   overflow: auto; /* Fixes card-logo from floating out of the box */
 }
 
+#sponsors .card {
+  min-height: 30vh;
+}
+
 .alt {
   background: #BDB3B1;
   color: #1A2324;
@@ -126,6 +133,8 @@ nav {
 }
 
 .card p {
+  font-size: 20px;
+  line-height: 2rem;
   margin-top: 20px;
 }
 
@@ -233,6 +242,10 @@ nav {
   .banner h2 strong {
     display: inline;
   }
+
+  .card p {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 450px) {
@@ -244,6 +257,14 @@ nav {
 
 
 @media screen and (min-width: 600px) {
+  .card-logo {
+    width: 400px;
+  }
+
+  .card p {
+    text-align: justify;
+  }
+
   header h1 {
     font-size: 40px;
   }
@@ -261,16 +282,23 @@ nav {
     padding-right: 10%;
   }
 
+  header h1 {
+    font-size: 50px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .card-logo {
     float: left;
     shape-outside: circle(50%);
     width: 40vw;
   }
 
-  header h1 {
-    font-size: 50px;
-    margin: 0 auto;
+  .card p {
+    text-align: left;
   }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -286,6 +314,12 @@ nav {
 @media screen and (min-width: 1100px) {
   header h1 {
     font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card p {
+    text-align: justify;
   }
 }
 
