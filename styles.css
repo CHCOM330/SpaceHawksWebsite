@@ -29,6 +29,7 @@ header {
   /* padding-top: 10vh; */
   text-align: center;
 
+  /* TODO: Use imgage-set */
   background-image: url("./images/moon.png");
   background-position: center;
   background-size: cover;
