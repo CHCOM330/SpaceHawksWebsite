@@ -133,26 +133,25 @@ nav {
 /* Gallery stuff */
 
 .image-gallery {
-  display: grid;
-  grid-gap: 50px;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, 100px);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
 }
 
-.image-gallery img {
-  display: block;
-  margin: 0;
-  width: 100px;
-  margin: 0 auto; /* Makes things look nicer on older browsers */
+.image-gallery li figure {
+  width: min-content;
+  padding: 30px;
 }
 
-.image-gallery figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
+.image-gallery figcaption {
   text-align: center;
+}
+
+.image-gallery img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .sponsor-gallery figure {
