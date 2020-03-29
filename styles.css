@@ -15,14 +15,18 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: #1A2324;
+}
+
 a:link, a:visited {
   color: unset;
   text-decoration: none;
 }
 
 header {
-  background: #090909;
-  color: #ffffff;
+  color: #BDB3B1;
+  background: #1A2324;
   display: grid;
   font-weight: 900;
   height: 90vh;
@@ -41,7 +45,6 @@ header {
 }
 
 header h1 {
-  color: #BDB3B1;
   background: #1A2324;
   padding: 30px;
   margin: 0 auto;
