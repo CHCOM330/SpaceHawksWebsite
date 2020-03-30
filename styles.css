@@ -24,9 +24,62 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-
 nav {
+  display: block;
+  background: #1A2324;
+  color: #BDB3B1;
+
+  min-height: 10vh;
+  width: 100%;
+
+  transition: width 500ms ease;
+}
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#navlogo {
+  padding: 2vw;
+  height: 8vh;
+}
+
+#navlogo-item {
+  align-self: flex-start;
+}
+
+nav ul li a {
+  color: #BDB3B1;
+  border-radius: 10px;
+  font-weight: bold;
+  height: max-content;
+  height: 100%;
+  padding: 15px;
+  width: 100vw;
+  transition: color,background 100ms linear;
+  height: 5vh;
   display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+nav:hover ul li a {
+  display: flex;
+}
+
+nav ul img {
+  display: block;
+  height: 8vh;
+  margin-right: 10px;
+}
+
+nav ul li a:hover {
+  background: #BDB3B1;
+  color: #1A2324;
+  cursor: pointer;
 }
 
 header {
@@ -146,6 +199,8 @@ header h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
+  /* max-height: 100vh; */
+  /* overflow-y: hidden; */
 }
 
 .image-gallery li figure {
@@ -185,55 +240,15 @@ header h1 {
 }
 
 @media screen and (min-width: 350px) {
-  /* Enable flex based nav bar */
-  @supports (display: flex) {
-    nav {
-      display: block;
-      background: #1A2324;
-      color: #BDB3B1;
+  /* Transform nav bar into horizontal one */
+  nav ul {
+    flex-direction: row;
+  }
 
-      height: 10vh;
-      width: 100%;
-
-      transition: 50ms ease;
-      transition: width 500ms ease;
-    }
-    nav ul {
-      align-items: center;
-      display: flex;
-      height: 100%;
-    }
-
-    nav ul li a {
-      color: #BDB3B1;
-      border-radius: 10px;
-      font-weight: bold;
-      height: max-content;
-      height: 100%;
-      padding: 0 15px;
-      width: 80px;
-      transition: color,background 100ms linear;
-    }
-
-    nav ul li a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 15px;
-      padding: 15px 0;
-    }
-
-    nav ul img {
-      display: block;
-      height: 8vh;
-      margin-right: 10px;
-    }
-
-    nav ul li a:hover {
-      background: #BDB3B1;
-      color: #1A2324;
-      cursor: pointer;
-    }
+  nav ul li a {
+    display: flex;
+    width: 80px;
+    /* height: 5vh; */
   }
 
   header h1 {
