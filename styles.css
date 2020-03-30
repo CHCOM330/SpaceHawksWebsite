@@ -241,13 +241,27 @@ header h1 {
 
 @media screen and (min-width: 350px) {
   /* Transform nav bar into horizontal one */
+  nav {
+    height: 10vh;
+  }
+
+  #navlogo {
+    padding: 0 0 0 2vw;
+    height: 6vh;
+  }
+
+  #navlogo-item {
+    align-self: auto;
+  }
+
   nav ul {
     flex-direction: row;
+    justify-content: space-around;
   }
 
   nav ul li a {
     display: flex;
-    width: 80px;
+    width: 60px;
     /* height: 5vh; */
   }
 
@@ -265,6 +279,9 @@ header h1 {
 }
 
 @media screen and (min-width: 450px) {
+  nav ul li a {
+    width: 80px;
+  }
   header h1 {
     font-size: 30px;
     word-spacing: 20px;
@@ -273,6 +290,11 @@ header h1 {
 
 
 @media screen and (min-width: 600px) {
+  nav ul {
+    justify-content: flex-start; /* Nav items should now be left-aligned */
+  }
+
+
   .card-logo {
     width: 400px;
   }
