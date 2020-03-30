@@ -93,7 +93,7 @@ header {
   border-bottom: 10px solid #1A2324;
 
   /* TODO: Use image-set */
-  background-image: url("./images/moon3.png");
+  background-image: url("./images/moon.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
