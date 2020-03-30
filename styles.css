@@ -6,6 +6,9 @@
 */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
+/* TODO: Change everything to em values */
+
+/* General stuff */
 
 html {
   box-sizing: border-box;
@@ -23,6 +26,8 @@ a:link, a:visited {
   color: #BDB3B1;
   text-decoration: none;
 }
+
+/* Nav stuff */
 
 nav {
   display: block;
@@ -81,6 +86,8 @@ nav ul img {
   color: #1A2324;
   cursor: pointer;
 }
+
+/* Header stuff */
 
 header {
   color: #BDB3B1;
@@ -229,7 +236,7 @@ header h1 {
 
 /* Media queries */
 
-@media screen and (min-width: 250px) {
+@media screen and (min-width: 15.625em) { /* 250 px */
   header h1 {
     font-size: 20px;
   }
@@ -239,7 +246,7 @@ header h1 {
   }
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 21.875em) { /* 350 px */
   /* Transform nav bar into horizontal one */
   nav {
     height: 10vh;
@@ -278,7 +285,7 @@ header h1 {
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 28.125em) { /* 450 px */
   .nav-button {
     width: 80px;
   }
@@ -289,7 +296,7 @@ header h1 {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) { /* 600 px */
   nav ul {
     justify-content: flex-start; /* Nav items should now be left-aligned */
   }
@@ -314,7 +321,7 @@ header h1 {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 43.75em) { /* 700 px */
   .card {
     padding-left: 10%;
     padding-right: 10%;
@@ -326,7 +333,7 @@ header h1 {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5em) { /* 1000 px */
   .card-logo {
     float: left;
     shape-outside: circle(50%);
@@ -337,9 +344,6 @@ header h1 {
     text-align: left;
   }
 
-}
-
-@media screen and (min-width: 1000px) {
   .card-logo {
     width: 400px;
   }
@@ -349,13 +353,13 @@ header h1 {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 68.75em) { /* 1100 px */
   header h1 {
     font-size: 80px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75em) { /* 1200 px */
   .card p {
     text-align: justify;
   }
