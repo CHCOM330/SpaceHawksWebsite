@@ -61,10 +61,10 @@ nav ul {
   font-weight: bold;
   height: max-content;
   height: 100%;
-  padding: 15px;
+  padding: 0 15px;
   width: 100vw;
   transition: color,background 100ms linear;
-  height: 5vh;
+  height: 8vh;
   display: none;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,9 @@ nav ul img {
   margin-right: 10px;
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.nav-button:focus,
+.nav-button:active {
   background: #BDB3B1;
   color: #1A2324;
   cursor: pointer;
@@ -232,6 +234,12 @@ header h1 {
 .sponsor-gallery img {
   border-radius: 100%;
 }
+
+
+
+
+
+
 
 
 /* Media queries */
