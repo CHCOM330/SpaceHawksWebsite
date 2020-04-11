@@ -57,7 +57,7 @@ nav ul {
 
 .nav-button {
   color: #BDB3B1;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   font-weight: bold;
   height: max-content;
   height: 100%;
@@ -86,7 +86,26 @@ nav ul img {
 .nav-button:active {
   background: #BDB3B1;
   color: #1A2324;
+  border-bottom: 2px solid white;
+  margin-bottom: -2px;
   cursor: pointer;
+}
+
+#home-page #homeButton a,
+#members-page #membersButton a,
+#gallery-page #galleryButton a,
+#contact-page #contactButton a {
+  border-bottom: 2px solid #F00;
+  margin-bottom: -2px;
+  cursor: default;
+}
+
+#home-page #homeButton:hover a,
+#members-page #membersButton:hover a,
+#gallery-page #galleryButton:hover a,
+#contact-page #contactButton:hover a {
+  background: #BDB3B1;
+  color: #1A2324;
 }
 
 /* Header stuff */
