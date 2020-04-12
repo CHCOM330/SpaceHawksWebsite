@@ -221,6 +221,10 @@ header h1 {
   margin-top: 20px;
 }
 
+.team-card h3 {
+  font-size: 80px;
+  text-align: left;
+}
 
 /* Gallery stuff */
 
@@ -256,7 +260,9 @@ header h1 {
   border-radius: 100%;
 }
 
-
+.team-card .image-gallery img {
+  width: 200px;
+}
 
 
 
