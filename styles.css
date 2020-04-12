@@ -182,6 +182,11 @@ header h1 {
   background-image: url("./images/robot.jpg");
 }
 
+#team-banner h2 {
+  background: linear-gradient(to right, #FF7568, #FFCC26, #004CFF);
+  color: white;
+}
+
 /* Card stuff */
 
 .card {
@@ -221,10 +226,35 @@ header h1 {
   margin-top: 20px;
 }
 
+.team-card {
+  min-height: unset;
+}
+
 .team-card h3 {
+  display: inline;
   font-size: 80px;
   text-align: left;
 }
+
+#programming-team {
+  color: #FFAFA8;
+  background: #FF7568;
+  border-bottom: 10px solid #FF9252;
+}
+
+#electrical-team {
+  color: #FFE993;
+  border-top: 10px solid #FFAF3C;
+  background: #FFCC26;
+  border-bottom: 10px solid #AAA16E;
+}
+
+#mechanical-team {
+  color: #598AFF;
+  border-top: 10px solid #5577B7;
+  background: #004CFF;
+}
+
 
 /* Gallery stuff */
 
@@ -262,6 +292,25 @@ header h1 {
 
 .team-card .image-gallery img {
   width: 200px;
+}
+
+.team-card .team-icon {
+  max-width: 100px;
+  max-height: 100px;
+  display: inline;
+  margin-left: 30px;
+}
+
+#programming-team .team-icon {
+  color: #FFAFA8;
+}
+
+#electrical-team .team-icon {
+  color: #FFE993;
+}
+
+#mechanical-team .team-icon {
+  color: #598AFF;
 }
 
 
