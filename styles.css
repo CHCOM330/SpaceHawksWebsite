@@ -82,6 +82,24 @@ nav ul img {
   margin-right: 10px;
 }
 
+#githubButton {
+  display: none;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+#githubButton svg {
+  height: 6vh;
+}
+
+#githubButton:hover svg {
+  color: red;
+}
+
+#githubButton a:focus {
+  outline: none;
+}
+
 .nav-button:hover, /* Swap colors on hover */
 .nav-button:focus,
 .nav-button:active {
@@ -386,13 +404,17 @@ header h1 {
 }
 
 @media screen and (min-width: 43.75em) { /* 700 px */
+  nav ul {
+    justify-content: flex-start; /* Nav items should now be left-aligned */
+  }
+
+  #githubButton {
+    display: block;
+  }
+
   .card {
     padding-left: 10%;
     padding-right: 10%;
-  }
-
-  nav ul {
-    justify-content: flex-start; /* Nav items should now be left-aligned */
   }
 
 
