@@ -241,13 +241,20 @@ header h1 {
 
 .team-card {
   min-height: unset;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .team-card h3 {
-  display: inline;
-  font-size: 80px;
-  text-align: left;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.team-card .team-icon {
+  max-width: 50px;
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
 }
 
 #programming-team {
@@ -306,14 +313,7 @@ header h1 {
 }
 
 .team-card .image-gallery img {
-  width: 200px;
-}
-
-.team-card .team-icon {
-  max-width: 100px;
-  max-height: 100px;
-  display: inline;
-  margin-left: 30px;
+  width: 100px;
 }
 
 .team-card figcaption {
