@@ -228,6 +228,7 @@ header h1 {
 
 .team-card {
   min-height: unset;
+  font-size: 35px;
 }
 
 .team-card h3 {
@@ -247,6 +248,7 @@ header h1 {
   border-top: 10px solid #FFAF3C;
   background: #FFCC26;
   border-bottom: 10px solid #AAA16E;
+  /* -webkit-text-stroke: 0.5px white; */
 }
 
 #mechanical-team {
@@ -312,9 +314,6 @@ header h1 {
 #mechanical-team .team-icon {
   color: #598AFF;
 }
-
-
-
 
 
 
