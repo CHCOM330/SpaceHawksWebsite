@@ -240,6 +240,7 @@ header h1 {
 }
 
 .team-card {
+  min-height: 0px; /* For IE 11 */
   min-height: unset;
   font-size: 20px;
 }
@@ -330,9 +331,18 @@ header h1 {
   .banner h2 {
     font-size: 30px;
   }
+
+  .team-card h3 {
+    font-size: 30px;
+  }
+
+  .team-card .team-icon {
+    max-width: 80px;
+    max-height: 80px;
+  }
 }
 
-@media screen and (min-width: 425px) { /* 450 px */
+@media screen and (min-width: 425px) { /* 425 px */
   /* Transform nav bar into horizontal one */
   nav {
     height: 10vh;
@@ -369,6 +379,15 @@ header h1 {
 
   .card p {
     font-size: 30px;
+  }
+
+  .team-card h3 {
+    font-size: 40px;
+  }
+
+  .team-card .team-icon {
+    max-height: 100px;
+    max-width: 100px;
   }
 }
 
@@ -420,6 +439,20 @@ header h1 {
     font-size: 50px;
     margin: 0 auto;
   }
+
+  .team-card h3 {
+    font-size: 60px;
+  }
+
+  .team-card .team-icon {
+    max-height: 100px;
+    max-width: 100px;
+    margin-top: 10px;
+  }
+
+  .team-card .image-gallery img {
+    width: 150px;
+  }
 }
 
 @media screen and (min-width: 62.5em) { /* 1000 px */
@@ -440,6 +473,21 @@ header h1 {
   .banner h2 {
     font-size: 50px;
   }
+
+  .team-card h3 {
+    display: inline;
+    font-size: 80px;
+  }
+
+  .team-card .team-icon {
+    display: inline;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  .team-card .image-gallery {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (min-width: 68.75em) { /* 1100 px */
@@ -451,6 +499,14 @@ header h1 {
 @media screen and (min-width: 75em) { /* 1200 px */
   .card p {
     text-align: justify;
+  }
+
+  .team-card figcaption {
+    font-size: 25px;
+  }
+
+  .team-card .image-gallery img {
+    width: 175px;
   }
 }
 
