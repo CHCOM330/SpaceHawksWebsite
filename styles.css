@@ -62,7 +62,6 @@ nav ul {
   font-weight: bold;
   height: max-content;
   height: 100%;
-  padding: 0 15px;
   width: 100vw;
   transition: color,background 100ms linear;
   height: 8vh;
@@ -421,7 +420,7 @@ header h1 {
   .nav-button {
     display: flex;
     width: 50px; /* Any bigger and a horizontal scroll can occur on 425px width devices */
-    /* height: 5vh; */
+    padding: 0 15px;
   }
 
   #home-page #homeButton a, /* Show a red line under current page button */
