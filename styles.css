@@ -196,22 +196,37 @@ header h1 {
   background-image: url("./images/team.jpg");
 }
 
-#mission-banner {
+#goal-banner {
   background-image: url("./images/robot.jpg");
 }
+
+#competition-banner {
+  background-image: url("./images/competition.jpg");
+}
+
 
 /* Card stuff */
 
 .card {
   background: #1A2324;
   color: #BDB3B1;
-  min-height: 70vh;
+  min-height: 40vh;
   padding: 40px 5%;
   overflow: auto; /* Fixes card-logo from floating out of the box */
 }
 
+.card a {
+  color: red;
+  /* text-decoration: red underline; */
+}
+
 #sponsors .card {
   min-height: 30vh;
+}
+
+#sponsors .card a {
+  color: #BDB3B1;
+  text-decoration: none;
 }
 
 .alt {
