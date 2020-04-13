@@ -308,15 +308,16 @@ header h1 {
   font-size: 20px;
   line-height: 1em;
   font-weight: bold;
-  border-bottom: 2px solid red;
+  border-bottom: 4px solid red;
   width: max-content;
 }
 
-@supports (text-decoration: underline) {
+@supports (text-decoration-thickness: 4px) {
   .minicard li h4 {
     border-bottom: none;
     margin: 20px 0 0 0;
-    text-decoration: 2px red underline;
+    text-decoration: red underline;
+    text-decoration-thickness: 4px;
     text-align: center;
     width: unset;
   }
