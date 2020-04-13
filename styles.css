@@ -303,12 +303,23 @@ header h1 {
 }
 
 .minicard li h4 {
-  text-align: center;
-  margin-top: 20px;
+  margin: 20px auto;
+  margin-bottom: 0px;
   font-size: 20px;
   line-height: 1em;
   font-weight: bold;
-  text-decoration: 3px red underline;
+  border-bottom: 2px solid red;
+  width: max-content;
+}
+
+@supports (text-decoration: underline) {
+  .minicard li h4 {
+    border-bottom: none;
+    margin: 20px 0 0 0;
+    text-decoration: 2px red underline;
+    text-align: center;
+    width: unset;
+  }
 }
 
 .minicard li img {
