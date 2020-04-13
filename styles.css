@@ -293,6 +293,35 @@ header h1 {
   background: #1A2324;
 }
 
+/* Minicards */
+.minicard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.minicard li {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 75px 30px;
+}
+
+.minicard p {
+  text-align: left;
+}
+
+.minicard h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 1em;
+  font-weight: bold;
+  text-decoration: 3px red underline;
+}
+
+.minicard img {
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
 
 /* Gallery stuff */
 
@@ -441,7 +470,7 @@ header h1 {
     width: 400px;
   }
 
-  .card p {
+  #competition .card p {
     text-align: justify;
   }
 
@@ -516,7 +545,7 @@ header h1 {
 }
 
 @media screen and (min-width: 75em) { /* 1200 px */
-  .card p {
+  #competition .card p {
     text-align: justify;
   }
 
