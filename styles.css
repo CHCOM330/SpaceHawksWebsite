@@ -294,11 +294,6 @@ header h1 {
 }
 
 /* Minicards */
-.minicard {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
 .minicard li {
   display: flex;
   flex-direction: column;
@@ -312,7 +307,7 @@ header h1 {
 .minicard h4 {
   text-align: center;
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1em;
   font-weight: bold;
   text-decoration: 3px red underline;
@@ -441,6 +436,15 @@ header h1 {
   .team-card .team-icon {
     max-height: 100px;
     max-width: 100px;
+  }
+
+  .minicard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .minicard h4 {
+    font-size: 30px;
   }
 }
 
