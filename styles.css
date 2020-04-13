@@ -322,6 +322,16 @@ header h1 {
   max-width: 100%;
 }
 
+.minicard a {
+  padding-top: 20px;
+  /* margin-top: auto; */
+  font-size: 18px;
+}
+
+.minicard a::after {
+  content: " »"
+}
+
 /* Gallery stuff */
 
 .image-gallery {
