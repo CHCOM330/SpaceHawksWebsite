@@ -164,7 +164,7 @@ header h1 {
 /* Banner stuff */
 
 .banner {
-  height: 70vh;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -188,6 +188,10 @@ header h1 {
 
 .banner h2 strong {
   display: block;
+}
+
+nav + article section.banner { /* If banner is first thing on page, account for nav bar height */
+  height: 90vh;
 }
 
 #team-banner {
