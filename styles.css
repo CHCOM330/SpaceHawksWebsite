@@ -186,6 +186,26 @@ header h1 {
   text-transform: uppercase;
 }
 
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner::after {
+  content:"";
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0, 0.6) 100%);
+}
+
 .banner h2 strong {
   display: block;
 }
@@ -194,15 +214,15 @@ nav + article section.banner { /* If banner is first thing on page, account for 
   height: 90vh;
 }
 
-#team-banner {
-  background-image: url("./images/team.jpg");
+#team-banner::before {
+  background-image: url("./images/team_unedited.jpg");
 }
 
-#goal-banner {
+#goal-banner::before {
   background-image: url("./images/robot.jpg");
 }
 
-#competition-banner {
+#competition-banner::before {
   background-image: url("./images/competition.jpg");
 }
 
