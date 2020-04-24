@@ -380,8 +380,8 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 }
 
 .image-gallery li figure {
-  width: min-content;
-  padding: 30px;
+  width: 200px;
+  margin: 50px auto;
 }
 
 .image-gallery img {
@@ -564,6 +564,10 @@ nav + article section.banner { /* If banner is first thing on page, account for 
   .team-card .image-gallery img {
     width: 150px;
   }
+
+  .team-card .image-gallery li figure {
+    width: 250px;
+  }
 }
 
 @media screen and (min-width: 62.5em) { /* 1000 px */
@@ -626,6 +630,10 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 
   .team-card .image-gallery img {
     width: 200px;
+  }
+
+  .team-card .image-gallery li figure {
+    width: 300px;
   }
 }
 
