@@ -219,15 +219,15 @@ nav + article section.banner { /* If banner is first thing on page, account for 
   height: 90vh;
 }
 
-#team-banner, #team-banner::before {
+#team-banner::before {
   background-image: url("./images/team_unedited.jpg");
 }
 
-#goal-banner, #goal-banner::before {
+#goal-banner::before {
   background-image: url("./images/robot_unedited.jpg");
 }
 
-#competition-banner, #competition-banner::before {
+#competition-banner::before {
   background-image: url("./images/competition_unedited.jpg");
 }
 
