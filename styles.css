@@ -151,11 +151,11 @@ header {
 
 header h1 {
   background: #1A2324;
-  padding: 30px;
+  padding: 30px 10vw;
   margin: 0 auto;
   height: min-content;
   width: min-content;
-  font-size: 15px;
+  font-size: 7vw;
   line-height: 3rem;
   text-transform: uppercase;
   word-spacing: 10px;
@@ -168,10 +168,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  
   position: relative;
 }
 
@@ -187,7 +184,7 @@ header h1 {
   z-index: 9999;
 }
 
-.banner::before {
+.banner::before { /* Holds image behind header and maybe filter if necessary */
   content: "";
   position: absolute;
   width: 100%;
@@ -200,7 +197,7 @@ header h1 {
   z-index: -1;
 }
 
-.banner::after {
+.banner::after { /* Holds linear gradient effect */
   content: "";
   position: absolute;
   width: 100%;
@@ -420,6 +417,7 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 @media screen and (min-width: 15.625em) { /* 250 px */
   header h1 {
     font-size: 20px;
+    padding: 30px;
   }
 
   .banner h2 {
