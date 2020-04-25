@@ -415,10 +415,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* min-height: 50vh; */
-  justify-items: left;
-  width: 80vw;
-  margin: 0 10vw;
-  margin-top: 50px;
+  max-width: 80vw;
+  padding: 50px 10vw;
   font-size: 6vw;
 }
 
@@ -428,7 +426,6 @@ footer section {
 
 .contact-footer ul li a {
   display: block;
-  /* text-align: center; */
   margin-bottom: 30px;
 }
 
@@ -463,6 +460,19 @@ footer svg {
 
 footer ul li:hover svg {
   animation: jump 500ms;
+}
+
+.alt-footer {
+  background: #BDB3B1;
+}
+
+.alt-footer a {
+  color: #1A2324;
+}
+
+.alt-footer h5, .alt-footer h5 a, .alt-footer h5 a:visited, .alt-footer h5 a:link {
+  color: #1A2324;
+  font-weight: normal;
 }
 
 #email:hover svg, #email:hover p {
@@ -706,6 +716,10 @@ footer ul li:hover svg {
     position: absolute;
     left: -20px;
     transition: color 200ms ease;
+  }
+
+  .alt-footer ol li::before {
+    color: #1A2324;
   }
 }
 
