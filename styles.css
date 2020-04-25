@@ -62,7 +62,8 @@ nav ul {
 
 #menu-icon {
   height: 6vh;
-  padding-right: 8vw;
+  margin-right: 8vw;
+  transition: all 0.5s;
 }
 
 .nav-button {
@@ -86,6 +87,7 @@ nav:hover .nav-button {
 
 nav:hover #menu-icon {
   color: red;
+  transform: rotate(180deg);
 }
 
 nav ul img {
