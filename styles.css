@@ -85,6 +85,10 @@ nav:hover .nav-button {
   display: flex;
 }
 
+nav:hover #menu-icon {
+  color: red;
+}
+
 nav ul img {
   display: block;
   height: 8vh;
@@ -448,7 +452,7 @@ nav + article section.banner { /* If banner is first thing on page, account for 
   }
 }
 
-@media screen and (min-width: 26.5625em) { /* 425 px */
+@media screen and (min-width: 450px) { /* 425 px */
   /* Transform nav bar into horizontal one */
   nav {
     height: 10vh;
