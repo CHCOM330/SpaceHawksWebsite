@@ -418,6 +418,7 @@ footer {
   justify-items: left;
   width: 80vw;
   margin: 0 10vw;
+  margin-top: 50px;
 }
 
 .contact-footer ul li a {
@@ -458,6 +459,15 @@ footer h5, footer h5 a, footer h5 a:visited, footer h5 a:link {
 footer svg {
   width: 30px;
   padding-right: 10px;
+  position: relative;
+}
+
+footer ul li:hover svg {
+  animation: jump 500ms;
+}
+
+#facebook:hover svg, #facebook:hover p {
+  color: #43609C;
 }
 
 
@@ -707,5 +717,20 @@ footer svg {
     body{
         overflow: auto;
         height: 100%;
+    }
+}
+
+/* Animations */
+@keyframes jump {
+    0% {
+      bottom: 0;
+    }
+
+    50% {
+      bottom: 10px;
+    }
+
+    100% {
+      bottom: 0;
     }
 }
