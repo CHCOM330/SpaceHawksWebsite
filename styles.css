@@ -409,8 +409,7 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 .team-card .member-role {
   font-size: 25px;
   font-weight: lighter;
-  background: #BDB3B1;
-  color: #1A2324;
+  color: #BDB3B1;
   width: max-content;
   margin: 20px auto;
   padding: 5px;
