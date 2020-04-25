@@ -259,15 +259,6 @@ nav + article section.banner { /* If banner is first thing on page, account for 
   /* text-decoration: red underline; */
 }
 
-#sponsors .card {
-  min-height: 30vh;
-}
-
-#sponsors .card a {
-  color: #BDB3B1;
-  text-decoration: none;
-}
-
 .alt {
   background: #BDB3B1;
   color: #1A2324;
@@ -409,14 +400,6 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 
 .image-gallery figcaption {
   text-align: center;
-}
-
-.sponsor-gallery figure {
-  cursor: pointer;
-}
-
-.sponsor-gallery img {
-  border-radius: 100%;
 }
 
 .team-card .image-gallery img {
