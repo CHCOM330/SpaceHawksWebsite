@@ -413,30 +413,28 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 /* Footer stuff */
 footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  min-height: 50vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* min-height: 50vh; */
   justify-items: left;
   width: 80vw;
   margin: 0 10vw;
   margin-top: 50px;
+  font-size: 6vw;
+}
+
+footer section {
+  margin-bottom: 50px;
 }
 
 .contact-footer ul li a {
-  display: flex;
-  margin-bottom: 10px;
+  display: block;
+  /* text-align: center; */
+  margin-bottom: 30px;
 }
 
 footer ol li {
   position: relative;
-}
-
-footer ol li::before {
-  content: '▶';
-  font-size: 10px;
-  color: #bdb3b1;
-  position: absolute;
-  left: -20px;
-  transition: color 200ms ease;
+  margin-bottom: 20px;
 }
 
 footer ol li:hover a {
@@ -448,8 +446,9 @@ footer ol li:hover::before {
 }
 
 footer h5 {
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 9vw;
+  margin-bottom: 50px;
+  font-weight: lighter;
 }
 
 footer h5, footer h5 a, footer h5 a:visited, footer h5 a:link {
@@ -458,7 +457,7 @@ footer h5, footer h5 a, footer h5 a:visited, footer h5 a:link {
 
 footer svg {
   width: 30px;
-  padding-right: 10px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -507,7 +506,16 @@ footer ul li:hover svg {
   }
 }
 
-@media screen and (min-width: 450px) { /* 425 px */
+@media screen and (min-width: 333px) { /* 333 px */
+  footer {
+    font-size: 20px;
+  }
+  footer h5 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 450px) { /* 450 px */
   /* Transform nav bar into horizontal one */
   nav {
     height: 10vh;
@@ -578,6 +586,10 @@ footer ul li:hover svg {
 
   .minicard h4 {
     font-size: 30px;
+  }
+
+  .contact-footer ul li a {
+    display: flex;
   }
 }
 
@@ -685,6 +697,15 @@ footer ul li:hover svg {
 
   .team-card .image-gallery {
     margin-top: 100px;
+  }
+
+  footer ol li::before {
+    content: '▶';
+    font-size: 10px;
+    color: #bdb3b1;
+    position: absolute;
+    left: -20px;
+    transition: color 200ms ease;
   }
 }
 
