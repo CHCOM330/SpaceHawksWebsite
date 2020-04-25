@@ -437,8 +437,9 @@ footer {
   margin: 0 10vw;
 }
 
-.contact-footer ul {
+.contact-footer ul li a {
   display: flex;
+  margin-bottom: 10px;
 }
 
 footer ol li {
@@ -467,12 +468,13 @@ footer h5 {
   margin-bottom: 30px;
 }
 
-footer h5, footer h5 a, footer h5 a:visited {
+footer h5, footer h5 a, footer h5 a:visited, footer h5 a:link {
   color: red;
 }
 
 footer svg {
-  width: 50px;
+  width: 30px;
+  padding-right: 10px;
 }
 
 
