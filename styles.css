@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,900&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,900&display=swap&subset=latin-ext');
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -407,8 +407,8 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 }
 
 .team-card .member-role {
-  font-size: 25px;
-  font-weight: lighter;
+  font-size: 20px;
+  font-weight: 200;
   color: #BDB3B1;
   width: max-content;
   margin: 20px auto;
@@ -419,8 +419,7 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 }
 
 .team-card-alt .member-role {
-  color: #BDB3B1;
-  background: #1A2324;
+  color: #1A2324;
 }
 
 .team-card figure:hover .member-role {
@@ -773,6 +772,10 @@ footer ul li:hover svg {
 
   .team-card .image-gallery li figure {
     width: 300px;
+  }
+
+  .team-card .member-role {
+    font-size: 25px;
   }
 }
 
