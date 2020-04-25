@@ -54,6 +54,16 @@ nav ul {
 
 #navlogo-item {
   align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding-right: 30px;
+}
+
+#menu-icon {
+  height: 6vh;
+  padding-right: 8vw;
 }
 
 .nav-button {
@@ -168,7 +178,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   position: relative;
 }
 
@@ -452,6 +462,13 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 
   #navlogo-item {
     align-self: auto;
+    display: block;
+    width: 6vh;
+    width: unset;
+  }
+
+  #menu-icon {
+    display: none;
   }
 
   nav ul {
