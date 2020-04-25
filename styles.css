@@ -127,7 +127,7 @@ nav ul img {
 #home-page #homeButton a, /* Don't swap colors on hover if current page */
 #members-page #membersButton a,
 #gallery-page #galleryButton a,
-#contact-page #contactButton a {
+#sponsors-page #sponsorsButton a {
   background: #1A2324;
   color: #BDB3B1;
   pointer-events: none;
@@ -136,7 +136,7 @@ nav ul img {
 #home-page #homeButton a, /* Darken current page buttons for dropdown menu */
 #members-page #membersButton a,
 #gallery-page #galleryButton a,
-#contact-page #contactButton a {
+#sponsors-page #sponsorsButton a {
   background: #101616;
   cursor: default;
 }
@@ -586,7 +586,7 @@ footer ul li:hover svg {
   #home-page #homeButton a, /* Show a red line under current page button */
   #members-page #membersButton a,
   #gallery-page #galleryButton a,
-  #contact-page #contactButton a {
+  #sponsors-page #sponsorsButton a {
     border-bottom: 2px solid #FF0000;
     margin-bottom: -2px;
     background: #1A2324;
