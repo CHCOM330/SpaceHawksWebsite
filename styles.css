@@ -466,8 +466,16 @@ footer ul li:hover svg {
   animation: jump 500ms;
 }
 
+#email:hover svg, #email:hover p {
+  color: #8CE296;
+}
+
 #facebook:hover svg, #facebook:hover p {
   color: #43609C;
+}
+
+#instagram:hover svg, #instagram:hover p {
+  color: #B93B9F;
 }
 
 
