@@ -427,6 +427,23 @@ nav + article section.banner { /* If banner is first thing on page, account for 
   margin-top: 15px;
 }
 
+/* Footer stuff */
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.contact-footer ul {
+  display: flex;
+}
+
+footer svg {
+  width: 50px;
+}
+
+
+
+
 /* Media queries */
 
 @media screen and (min-width: 15.625em) { /* 250 px */
