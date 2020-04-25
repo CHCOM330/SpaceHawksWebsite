@@ -431,10 +431,44 @@ nav + article section.banner { /* If banner is first thing on page, account for 
 footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  min-height: 50vh;
+  justify-items: left;
+  width: 80vw;
+  margin: 0 10vw;
 }
 
 .contact-footer ul {
   display: flex;
+}
+
+footer ol li {
+  position: relative;
+}
+
+footer ol li::before {
+  content: '▶';
+  font-size: 10px;
+  color: #bdb3b1;
+  position: absolute;
+  left: -20px;
+  transition: color 200ms ease;
+}
+
+footer ol li:hover a {
+  border-bottom: 1px solid red;
+}
+
+footer ol li:hover::before {
+  color: red;
+}
+
+footer h5 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+footer h5, footer h5 a, footer h5 a:visited {
+  color: red;
 }
 
 footer svg {
